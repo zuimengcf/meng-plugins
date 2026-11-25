@@ -1,0 +1,14 @@
+{
+  "stickers": {
+    "packs": [
+      {
+        "label": "表情",
+        "images": ["smile.png", "heart.png"]
+      },
+      {
+        "label": "符号",
+        "images": ["star.png", "check.png"]
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "id": "repeater",
+  "name": "复读",
+  "version": 1,
+  "apiVersion": 1,
+  "icon": "auto_awesome",
+  "priority": 10,
+  "type": "script",
+  "action": "panel",
+  "description": "复读面板：读输入框内容，点按倍数把内容重复 N 次替换上屏（输入「我爱你」点×3 → 「我爱你我爱你我爱你」）。UI 由脚本 renderPanel() 自绘，宿主仅做通用渲染与上屏。"
+}

@@ -1,0 +1,59 @@
+{
+ "id": "tts-voice",
+ "name": "语音参数",
+ "version": 2,
+ "apiVersion": 1,
+ "icon": "tune",
+ "priority": 10,
+ "type": "script",
+ "action": "settings",
+ "settings": [
+  {
+   "key": "rate",
+   "label": "语速",
+   "type": "select",
+   "options": [
+    "0.5|很慢",
+    "0.6|慢",
+    "0.7|较慢（推荐）",
+    "0.85|稍慢",
+    "1.0|默认",
+    "1.2|快",
+    "1.5|很快"
+   ],
+   "defaultValue": "0.7"
+  },
+  {
+   "key": "pitch",
+   "label": "音调",
+   "type": "select",
+   "options": [
+    "0.8|低沉",
+    "0.9|略低",
+    "1.0|默认（推荐）",
+    "1.1|略高",
+    "1.2|清亮"
+   ],
+   "defaultValue": "1.0"
+  },
+  {
+   "key": "engine",
+   "label": "TTS 引擎（留空用系统默认）",
+   "type": "text",
+   "defaultValue": ""
+  },
+  {
+   "key": "oggExt",
+   "label": "输出为 .ogg 扩展名（伪装语音，内容仍为 wav）",
+   "type": "switch",
+   "defaultValue": "false"
+  },
+  {
+   "key": "shareFallback",
+   "label": "直插失败时分享兜底",
+   "type": "switch",
+   "defaultValue": "true"
+  }
+ ],
+ "description": "语音发送的合成参数设置：语速、音调、TTS 引擎。参数由宿主 TtsAudioCommit 读取生效。"
+}

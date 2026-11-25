@@ -1,0 +1,22 @@
+{
+  "id": "text-to-file",
+  "name": "文本转文件",
+  "version": 1,
+  "apiVersion": 1,
+  "icon": "description",
+  "priority": 10,
+  "type": "script",
+  "action": "panel",
+  "ui": "frame",
+  "hooks": [],
+  "settings": [
+    {
+      "key": "defaultFormat",
+      "label": "默认导出格式",
+      "type": "select",
+      "options": ["auto|自动识别", "txt|纯文本", "md|Markdown", "html|HTML"],
+      "defaultValue": "auto"
+    }
+  ],
+  "description": "文本转文件：把输入框内容（空则剪贴板最新内容）导出为 txt/md/html 文件。自动识别模式按内容智能判断 md/html 语法。点按即生成文件并弹系统分享。"
+}

@@ -1,0 +1,8 @@
+# 临时/构建垃圾不入 git
+*.tmp
+*.log
+__pycache__/
+*.pyc
+
+# 注意：dist/*.meng 是发布产物，应入仓（插件仓库的核心交付物）
+# RELEASES.tsv 发布台账，应入仓

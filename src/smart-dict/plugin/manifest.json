@@ -1,0 +1,14 @@
+{
+  "id": "smart-dict",
+  "name": "本地词典",
+   "version": "1.1.114",
+  "apiVersion": 1,
+  "icon": "library_books",
+  "priority": 5,
+  "type": "script",
+  "action": "panel",
+  "ui": "frame",
+  "hooks": [],
+  "dict": { "defSearch": true },
+  "description": "本地中英词典：打开面板自动以输入框全文为查询词，宿主搜索全量词库（热点百科1.3万+中文词库31.1万+英文Rime过滤版7.3万+词典二主表7.8万（白霜词条升级为真实中文释义，空释义保留做联想补全）+游戏/ACG/人物/AI/品牌/网络分类0.6万，共47万条）。游戏/ACG等按类型独立分类词库。点按词条完整替换输入框并上屏释义。数据随包本地离线，无需联网。"
+}

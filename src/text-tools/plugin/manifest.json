@@ -1,0 +1,27 @@
+{
+  "id": "text-tools",
+  "name": "文本工具",
+  "version": "1.1.113",
+  "apiVersion": 1,
+  "icon": "text_format",
+  "priority": 10,
+  "type": "script",
+  "action": "annotate",
+  "hooks": ["PasteTransform"],
+  "settings": [
+    {"key": "enableAnnotate", "label": "拼音标注", "type": "switch", "defaultValue": "true", "quick": true},
+    {"key": "enableS2t", "label": "简体转繁体", "type": "switch", "defaultValue": "false", "quick": true},
+    {"key": "enableT2s", "label": "繁体转简体", "type": "switch", "defaultValue": "false", "quick": true},
+    {"key": "enableMorse", "label": "摩斯电码", "type": "switch", "defaultValue": "false", "quick": true},
+    {"key": "enableMorseDecode", "label": "摩斯解码", "type": "switch", "defaultValue": "false", "quick": true},
+    {"key": "enableNum2cn", "label": "数字转中文", "type": "switch", "defaultValue": "false", "quick": true},
+    {"key": "enableCalendar", "label": "公历转农历", "type": "switch", "defaultValue": "false", "quick": true},
+    {"key": "enableEra", "label": "年号换算", "type": "switch", "defaultValue": "false", "quick": true},
+    {"key": "tone", "label": "带声调", "type": "switch", "defaultValue": "true"},
+    {"key": "onlyRare", "label": "只注生僻字", "type": "switch", "defaultValue": "false"},
+    {"key": "cnCase", "label": "数字中文大小写", "type": "select", "defaultValue": "lower",
+     "options": ["lower|小写（一二三）", "upper|大写（壹贰叁）"]},
+    {"key": "morseSep", "label": "摩斯分隔符", "type": "select", "defaultValue": "space",
+     "options": ["space|空格", "slash|斜杠 /"]}
+  ]
+}

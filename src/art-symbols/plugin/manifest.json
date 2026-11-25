@@ -1,0 +1,12 @@
+{
+  "id": "art-symbols",
+  "name": "艺术字·符号面板",
+  "version": 7,
+  "type": "script",
+  "apiVersion": 1,
+  "icon": "emoji_symbols",
+  "action": "panel",
+  "ui": "frame",
+  "hooks": [],
+  "description": "多分类成品符号面板：氛围组合、爱心组合、网名装饰、列表/框式模板、分隔线、装饰框、颜文字、花体短语等整串成品，点按直接上屏；另保留花体/带圈数字/箭头/星花/货币/单位单字符类。UI 由脚本 renderPanel() 自绘，宿主仅做通用渲染与上屏。"
+}

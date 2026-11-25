@@ -1,0 +1,19 @@
+{
+ "id": "stickers",
+ "name": "贴纸包",
+ "version": 2,
+ "apiVersion": 1,
+ "icon": "mood",
+ "priority": 10,
+ "type": "script",
+ "action": "panel",
+ "description": "本地贴纸包：图片贴纸按分类展示，点按直接以图片发送到当前聊天（走 commitImage 直插通道，目标不支持时提示）。贴纸文件放插件目录，stickers.json 声明分类。",
+ "settings": [
+  {
+   "key": "shareFallback",
+   "label": "直插失败时分享兜底",
+   "type": "switch",
+   "defaultValue": "true"
+  }
+ ]
+}

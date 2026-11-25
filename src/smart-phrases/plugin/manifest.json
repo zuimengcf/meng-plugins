@@ -1,0 +1,25 @@
+{
+  "id": "smart-phrases",
+  "name": "高级短语",
+  "version": 13,
+  "type": "script",
+  "apiVersion": 1,
+  "icon": "format_quote",
+  "action": "panel",
+  "ui": "frame",
+  "hooks": [],
+  "menus": [
+    {
+      "id": "templates",
+      "title": "短语模板说明",
+      "type": "text",
+      "editType": null,
+      "editorTitle": "高级短语模板",
+      "hint": "{count}=字数；{editor}=输入框全文；{time:HH时mm分ss秒}=发送时间；{rand:n}=随机十六进制token；{rand:alnum:n}=随机字母数字token"
+    }
+  ],
+  "settings": [
+    {"key": "pricePerToken", "label": "每 token 单价（元）", "type": "text", "defaultValue": "0.00003"}
+  ],
+  "description": "定式文短语面板：输入框内容嵌入句式，点按直接上屏整句（如输入「隔壁老王」→「昨天，隔壁老王获得诺贝尔搞笑奖提名。」）；含整活/夸夸/吐槽/消息体/通知等句式与普通话术，另有字数/Token 计费/时间戳动态短语。UI 由脚本 renderPanel() 自绘。"
+}

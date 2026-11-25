@@ -1,0 +1,19 @@
+{
+ "id": "stickers-tieba",
+ "name": "贴吧表情",
+ "version": 3,
+ "apiVersion": 1,
+ "icon": "mood",
+ "priority": 10,
+ "type": "script",
+ "action": "panel",
+ "description": "贴吧表情包：93 张 webp 贴纸按序分组展示，点按直接以图片发送到当前聊天。",
+ "settings": [
+  {
+   "key": "shareFallback",
+   "label": "直插失败时分享兜底",
+   "type": "switch",
+   "defaultValue": "true"
+  }
+ ]
+}

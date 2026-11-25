@@ -1,0 +1,25 @@
+{
+  "id": "link-tools",
+  "name": "链接工具",
+  "version": 2,
+  "apiVersion": 1,
+  "icon": "language",
+  "priority": 100,
+  "type": "script",
+  "action": "link",
+  "hooks": ["PasteTransform"],
+  "menus": [
+    {"id": "custom-mirror", "title": "自定义链接镜像", "type": "text", "editType": "kv",
+     "editorTitle": "自定义链接镜像映射",
+     "hint": "每行一条 A→B 映射，格式：源域名=目标域名\n如: x.com=fixupx.com\n    bilibili.com=xxx.example.com\n\n留空删除全部自定义，恢复内置默认"}
+  ],
+  "settings": [
+    {"key": "mode", "label": "工作模式", "type": "select", "defaultValue": "clean",
+     "options": ["clean|净化追踪参数", "extract|提取纯链接"]},
+    {"key": "preserveFragment", "label": "保留 # 片段", "type": "switch", "defaultValue": "true"},
+    {"key": "mirrorMode", "label": "链接镜像", "type": "select", "defaultValue": "off",
+     "options": ["off|关闭", "replace|替换", "append|附加"]},
+    {"key": "repair", "label": "防爬混淆修复", "type": "switch", "defaultValue": "true"}
+  ],
+  "description": "链接工具：合并原「剪贴板净化」与「链接提取器」两个插件。净化模式清理 URL 追踪参数并支持镜像转发；提取模式从混杂文本中提取纯链接。"
+}
